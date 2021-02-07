@@ -1,24 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".Homepage">
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
-        android:text="Add"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.808"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.133" />
 
     <LinearLayout
         android:id="@+id/linear"
@@ -26,12 +13,14 @@
         android:layout_height="40dp"
         android:orientation="horizontal">
         <TextView
-           android:layout_width="100dp"
+            android:id="@+id/item"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Item"
             android:textSize="25sp"
-           />
+            />
         <TextView
+            android:id="@+id/desc"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="description"
@@ -39,6 +28,7 @@
             android:gravity="center"
             android:padding="3dip" />
         <TextView
+            android:id="@+id/price"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="price"
@@ -46,6 +36,7 @@
             android:gravity="center"
             android:padding="3dip" />
         <TextView
+            android:id="@+id/cate"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="category"
@@ -53,6 +44,7 @@
             android:gravity="center"
             android:padding="3dip" />
         <TextView
+            android:id="@+id/actn"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Action"
@@ -61,12 +53,6 @@
             android:padding="3dip" />
 
     </LinearLayout>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
 
-    </androidx.recyclerview.widget.RecyclerView>
-
-</LinearLayout>
+</RelativeLayout>
