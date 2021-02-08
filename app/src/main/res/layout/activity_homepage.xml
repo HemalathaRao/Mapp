@@ -61,7 +61,7 @@
             android:padding="3dip" />
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/linear2"
+        android:id="@+id/line2"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:orientation="horizontal">
